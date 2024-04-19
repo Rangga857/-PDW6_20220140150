@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Musik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <video id="bg-video" autoplay loop muted>
+            <source src="assets/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="description">
+            <div class="content">
+                <img src="image1.jpg" alt="Penyanyi">
+                <div>
+                    <h1>Roddy Ricch</h1>
+                    <p>Artis: Roddy Ricch</p>
+                    <p>Album: Please Excuse Me for Being Antisocial</p>
+                    <p>Dirilis: 2019</p>
+                    <p>Genre: Hip hop dan rap</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio class="song-track" src="assets/audio.mp3"></audio>
+    <button class="play-button" onclick="playPause()">Play</button>
+    <button class="pause-button" onclick="playPause()" style="display: none;">Pause</button>
+    <div class="progress-bar">
+        <div id="progress-bar-fill"></div>
+    </div>
+    <div class="time-display">0:00 / 0:00</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
